@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 if __name__ == "__main__":
     """A program that imports all functions from the file calculator"""
     from calculator_1 import add, sub, mul, div
@@ -10,9 +11,9 @@ if __name__ == "__main__":
 
     ops = {"+": add, "-": sub, "*": mul, "/": div}
     if sys.argv[2] not in list(ops.keys()):
-        print('Unknown operator. Available operators: +, -, *, /')
+        print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
 
-        num1 = int(sys.argv[1])
-        num2 = int(sys.argv[3])
-        print("{} {} {} =  {}".format(num1, sys.argv[2], num2, ops[sys.argv[2]](a, b)))
+    a = int(sys.argv[1])
+    b = int(sys.argv[3])
+    print("{} {} {} = {}".format(a, sys.argv[2], b, ops[sys.argv[2]](a, b)))
