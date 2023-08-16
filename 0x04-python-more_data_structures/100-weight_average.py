@@ -3,6 +3,7 @@ def weight_average(my_list=[]):
     """a function that returns the weighted average of all integers"""
     if not my_list:
         return 0
+
     tot_score = 0
     tot_weight = 0
     
