@@ -3,7 +3,6 @@ from __future__ import print_function
 import sys
 
 def safe_function(fct, *args):
-    """a function that executes a function safely."""
     try:
         result = fct(*args)
     except Exception as e:
