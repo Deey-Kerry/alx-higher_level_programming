@@ -2,7 +2,6 @@
 
 
 def magic_calculation(a, b):
-    """Python function that does exactly the same as the following Python bytecode"""
     result = 0
     for i in range(1, 3):
         try:
