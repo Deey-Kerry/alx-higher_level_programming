@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Representation of a rectangle class."""
+Representation of a rectangle class
+"""
 
 
 class Rectangle:
@@ -13,7 +14,7 @@ class Rectangle:
         self.height = height
 
     def __str__(self):
-        """A function program that returns an informal string representation
+        """A function program that returns an informal string rep
         """
         if self.__height == 0 or self.__width == 0:
             return ''
@@ -46,7 +47,8 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """A function that sets the height of the rectangle"""
+        """A function that sets the height of the rectangle
+        """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
@@ -54,12 +56,12 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """A function that calculates the area of the rectangle instance
+        """A function that calculates the area of the rectangle
         """
         return self.__width * self.__height
 
     def perimeter(self):
-        """A function that calculates and returns the perimeter of the rectangle
+        """A function that calculates the perimeter of the rectangle
         """
         if self.__height == 0 or self.__width == 0:
             return 0
