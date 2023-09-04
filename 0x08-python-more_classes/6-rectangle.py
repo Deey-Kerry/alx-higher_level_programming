@@ -29,8 +29,7 @@ class Rectangle:
         return rectangle_str[:-1]
 
     def __repr__(self):
-        """Function that Returns internal string representation of a Rectangle instance
-        """
+        """Function that Returns internal string representation of Rectangle        """
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
@@ -69,13 +68,12 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """Function that Calculates and returns the area of a Rectangle instance
+        """Function that Calculates and returns the area of a Rectangle
         """
         return self.__width * self.__height
 
     def perimeter(self):
-        """Function that Calculates and returns the perimeter of a Rectangle instance
-        """
+        """Function that Calculates and returns the perimeter of a Rectangle        """
         if self.__height == 0 or self.__width == 0:
             return 0
         return 2 * (self.__width + self.__height)
