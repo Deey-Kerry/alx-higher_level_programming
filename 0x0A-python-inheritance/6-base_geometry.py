@@ -1,14 +1,17 @@
 #!/usr/bin/python3
 """
-6-base_geometry.py
+6-base_geometry
 
-a class BaseGeometry (based on 5-base_geometry.py)
+This class Contains empty class BaseGeometry
+with public instance method area
 """
 
 
 class BaseGeometry:
-    """Writes a class BaseGeometry"""
+    """
+    Public instance method:
+        area(self)
+    """
     def area(self):
-        """raises an Exception with the message area()"""
+        """ raises an Exception with the message area() is not implemented"""
         raise Exception("area() is not implemented")
-
