@@ -5,10 +5,7 @@ function that returns a list of lists of integers
 
 
 def pascal_triangle(n):
-    """
-     returns a list of lists of integers representing the Pascal’s
-     triangle of n
-    """
+    """returns a lists of integers rep the Pascal’s triangle"""
     if n <= 0:
         return []
 
