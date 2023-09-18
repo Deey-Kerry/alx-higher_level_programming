@@ -1,31 +1,45 @@
 #!/usr/bin/python3
-"""the class Square that inherits from Rectangle"""
+"""
+Defines class square module contains class Square
+
+"""
+
+
 from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """inherits from class Rectangle and its attributes"""
+    """
+    inherits from class Rectangle
+    Inherited Attributes:
+        id
+        __weight        __height
+        __x             __y
+    """
     def __init__(self, size, x=0, y=0, id=None):
-        """Initializing the class square"""
+        """Initializes class square"""
         super().__init__(size, size, x, y, id)
+        self.size = size
 
     @property
     def size(self):
-        """size of square"""
+        """Getter size"""
         return self.width
 
     @size.setter
     def size(self, value):
-        """Sets the size of Square"""
+        """Setter size : sets width and height as size"""
         self.width = value
         self.height = value
 
     def __str__(self):
-        """prints string size"""
-        return "[{:s}] ({:d}) {:d}/{:d} - {:d}".format(self.__class__.__name__, self.id, self.x, self.y, self.size)
+        """Prints string"""
+        return "[{:s}] ({:d}) {:d}/{:d} - {:d}".format(
+            self.__class__.__name__, self.id, self.x, self.y,
+            self.size)
 
     def update(self, *args, **kwargs):
-        """sets attributes and arguements"""
+        """Updates arguements"""
         if args:
             for k, v in enumerate(args):
                 if k == 0:
@@ -47,7 +61,7 @@ class Square(Rectangle):
                 self.y = kwargs["y"]
 
     def to_dictionary(self):
-        """dictionary rep"""
+        """dictionary representation"""
         d = {}
         d["id"] = self.id
         d["size"] = self.size
