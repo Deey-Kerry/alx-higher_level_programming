@@ -1,11 +1,9 @@
 #!/usr/bin/node
 
-const lines = [
+const data = [
   'C is fun',
   'Python is cool',
   'JavaScript is amazing'
 ];
-  
-for (let i = 0; i < lines.length; i++) {
-  console.log(lines[i]);
-}
+
+data.forEach(line => console.log(line));
