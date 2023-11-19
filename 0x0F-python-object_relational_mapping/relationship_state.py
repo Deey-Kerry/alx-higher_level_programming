@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A script defines a State class
+This script defines a State class and a Base class
 """
 
 from sqlalchemy import Column, Integer, String
